@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>圣诞树</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eef;
+        }
+
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tree-top, .tree-middle, .tree-bottom, .tree-base {
+            background-color: green;
+        }
+
+        .tree-top {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+        }
+
+        .tree-middle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-top: -25px;
+        }
+
+        .tree-bottom {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin-top: -50px;
+        }
+
+        .tree-base {
+            width: 60px;
+            height: 60px;
+            background-color: brown;
+            margin-top: -30px;
+        }
+
+        .greeting {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            font-size: 1.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <div class="tree-top"></div>
+        <div class="tree-middle"></div>
+        <div class="tree-bottom"></div>
+        <div class="tree-base"></div>
+        <div class="greeting">林娜贝尔圣诞快乐奥！</div>
+    </div>
+</body>
+</html>
