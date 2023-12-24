@@ -16,48 +16,60 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+            font-size: 2em; /* 放大圣诞树和装饰品 */
         }
 
         .tree-top, .tree-middle, .tree-bottom, .tree-base {
             background-color: green;
+            margin-top: -1em;
         }
 
         .tree-top {
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
+            width: 3em;
+            height: 3em;
+            border-radius: 1.5em;
         }
 
         .tree-middle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            margin-top: -25px;
+            width: 6em;
+            height: 6em;
+            border-radius: 3em;
         }
 
         .tree-bottom {
-            width: 150px;
-            height: 150px;
-            border-radius: 75px;
-            margin-top: -50px;
+            width: 9em;
+            height: 9em;
+            border-radius: 4.5em;
         }
 
         .tree-base {
-            width: 60px;
-            height: 60px;
+            width: 3em;
+            height: 3em;
             background-color: brown;
-            margin-top: -30px;
         }
 
         .greeting {
             position: absolute;
-            top: 100%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: red;
-            font-size: 1.5em;
+            font-size: 0.3em; /* 调整祝福语大小 */
             text-align: center;
         }
+
+        .gift {
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            border: 0.1em solid gold;
+        }
+
+        /* 礼物位置示例 */
+        .gift1 { top: 70%; left: 50%; }
+        .gift2 { top: 80%; left: 60%; }
+        .gift3 { top: 85%; left: 40%; }
     </style>
 </head>
 <body>
@@ -66,7 +78,10 @@
         <div class="tree-middle"></div>
         <div class="tree-bottom"></div>
         <div class="tree-base"></div>
-        <div class="greeting">林娜贝尔圣诞快乐奥！</div>
+        <div class="greeting">林娜贝尔<br>圣诞快乐奥！</div>
+        <div class="gift gift1"></div>
+        <div class="gift gift2"></div>
+        <div class="gift gift3"></div>
     </div>
 </body>
 </html>
